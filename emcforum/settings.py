@@ -68,8 +68,9 @@ import json
 if 'VCAP_SERVICES' in os.environ:
     import json
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
-    # XXX: avoid hardcoding here
     mysql_srv = vcap_services['cleardb'][0]
+
+if bool(mysql_srv):
     cred = mysql_srv['credentials']
     DATABASES = {
         'default': {
@@ -84,15 +85,8 @@ if 'VCAP_SERVICES' in os.environ:
 else:
     DATABASES = {
         'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': 'mydatabase',
-            'ENGINE': 'mysql.connector.django',
-            'NAME': "ad_964bba132fa6cf1",
-            'USER': "ba3b2e1d282bd9",
-            'PASSWORD': "7eefa246",
-            'HOST': "us-cdbr-iron-east-01.cleardb.net",
-            'PORT': "3306",
-
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'mydatabase',
             }
         }
 
