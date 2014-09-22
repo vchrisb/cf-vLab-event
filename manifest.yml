@@ -1,8 +1,0 @@
----
-applications:
-- name: vLab
-  instances: 1
-  memory: 128M
-  command: null
-  services:
-  - vLab_mysql
