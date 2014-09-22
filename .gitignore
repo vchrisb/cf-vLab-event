@@ -4,6 +4,3 @@ __pycache__/
 
 #django migrations
 migrations/
-
-#cloud foundry manifest
-manifest.yml
