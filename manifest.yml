@@ -1,8 +1,8 @@
 ---
 applications:
-- name: vchrisb
+- name: vLab
   instances: 1
   memory: 128M
   command: null
   services:
-  - vchrisb_mysql
+  - vLab_mysql
