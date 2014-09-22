@@ -1,54 +1,72 @@
-vLab-event
+cf-vLab-event
 ==========
-django app for handling EMC's vLab autologinlinks for an event
+A Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. Tested with Pivotal Web Services https://run.pivotal.io/ 
 
 Requirements:
 -------------
-* Python (3)
-* Django (1.7)
-* django-environ (0.3.0)
-* psycopg2 (2.5.4) for postgresql support
+* a Cloud Foundry account
+* a Cloud Foundry Mysql Service
 
-Installation:
+Configuration:
 -------------
 
 First clone the repository:
 
-    $ git clone git://github.com/vchrisb/vLab-event
+    $ git clone git://github.com/vchrisb/cf-vLab-event
 
-create the environment fle ".env" in the "emcforum" directory
+Change django ``SECRET_KEY`` in ``emcforum/settings.py``:
 
-.env example:
+    SECRET_KEY = '&9cj-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
 
-    # as long as DEBUG=on you don't have to take care of 'static' files
-    DEBUG=on
+Configure your app and service name in ``manifest.yml``:
+
+    ---
+    applications:
+    - name: vchrisb
+      instances: 1
+      memory: 128M
+      command: null
+      services:
+      - vchrisb_mysql
+
+Deploy to Cloud Foundry:
+-------------
+
+Login to Pivtoal Web Services and create MySQL service:
+
+    cf login -a https://api.run.pivotal.io
+    cf marketplace
+    cf create-service cleardb spark vchrisb_mysql
+
+Push app and run database initialization script:
+
+    cf push --no-route -c "bash ./init_db.sh"
     
-    # the SECRET_KEY should be unique and only known to you
-    # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-    SECRET_KEY='+_$1x@!s0z!n+ccemn#(jfc!eaw3$jq8^)m&4ys%@60002sq2d'
+Push app:
+
+    cf push
+
+Test App:
+-------------
+
+Get ``status`` and ``URL``:
+
+    cf app vchrisb
     
-    # for sqlite database
-    DATABASE_URL='sqlite:///my-local-sqlite.db'
-    # for postgresql
-    #DATABASE_URL='postgresql://User:Password@127.0.0.1:5432/emcforum'
+Sample output:
+
+    Showing health and status for app vchrisb in org ORG / space SPACE as user@example.com...
+    OK
     
-    # The absolute path to the directory where collectstatic will collect static files for deployment.
-    STATIC_ROOT='/var/www/vLab/static'
+    requested state: started
+    instances: 1/1
+    usage: 128M x 1 instances
+    urls: vchrisb.cfapps.io
+    
+         state     since                    cpu    memory          disk
+    #0   running   2014-09-22 11:40:13 AM   0.0%   90.8M of 128M   168.8M of 1G
 
-create database tables:
 
-    $ python manage.py migrate
-
-create admin user:
-
-    $ python manage.py createsuperuser
-
-Test application:
------------------
-
-start the django development server:
-
-    $ python manage.py runserver 0.0.0.0:8000
-
-now you should be able to access the app by ``http://<IP>:8000/vLab``
-and the admin interface by ``http://<IP>:8000/admin``
+    
+now you should be able to access the app by ``http://vchrisb.cfapps.io/vLab``
+and the admin interface by ``http://vchrisb.cfapps.io/admin``
