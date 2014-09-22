@@ -65,10 +65,12 @@ WSGI_APPLICATION = 'emcforum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 import json
+mysql_srv = None
 if 'VCAP_SERVICES' in os.environ:
     import json
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
-    mysql_srv = vcap_services['cleardb'][0]
+    if 'cleardb' in vcap_services:
+        mysql_srv = vcap_services['cleardb'][0]
 
 if bool(mysql_srv):
     cred = mysql_srv['credentials']
