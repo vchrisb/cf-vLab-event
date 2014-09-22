@@ -22,12 +22,12 @@ Configure your app and service name in ``manifest.yml``:
 
     ---
     applications:
-    - name: vchrisb
+    - name: vLab
       instances: 1
       memory: 128M
       command: null
       services:
-      - vchrisb_mysql
+      - vLab_mysql
 
 Modify ``init_db.sh`` which will be run to initializ the DB:
 
@@ -50,7 +50,7 @@ Login to Pivtoal Web Services and create MySQL service:
 
     cf login -a https://api.run.pivotal.io
     cf marketplace
-    cf create-service cleardb spark vchrisb_mysql
+    cf create-service cleardb spark vLab_mysql
 
 Push app and run database initialization script:
 
@@ -65,22 +65,22 @@ Test App:
 
 Get ``status`` and ``URL``:
 
-    cf app vchrisb
+    cf app vLab
     
 Sample output:
 
-    Showing health and status for app vchrisb in org ORG / space SPACE as user@example.com...
+    Showing health and status for app vLab in org ORG / space SPACE as user@example.com...
     OK
     
     requested state: started
     instances: 1/1
     usage: 128M x 1 instances
-    urls: vchrisb.cfapps.io
+    urls: vlab.cfapps.io
     
          state     since                    cpu    memory          disk
     #0   running   2014-09-22 11:40:13 AM   0.0%   90.8M of 128M   168.8M of 1G
 
 
     
-now you should be able to access the app by ``http://vchrisb.cfapps.io/vLab``
-and the admin interface by ``http://vchrisb.cfapps.io/admin``
+now you should be able to access the app by ``http://vlab.cfapps.io/vLab``
+and the admin interface by ``http://vlabch.cfapps.io/admin``
