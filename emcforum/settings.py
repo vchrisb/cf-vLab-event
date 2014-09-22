@@ -23,7 +23,10 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if 'DEBUG' in os.environ:
-    DEBUG = os.environ['DEBUG']
+    if os.environ['DEBUG'] == 'True':
+        DEBUG = True
+    else:
+        DEBUG = False
 else:
     DEBUG = False
 
