@@ -1,8 +1,8 @@
 ---
 applications:
-- name: vchrisb-3
+- name: vchrisb
   instances: 1
   memory: 128M
   command: null
   services:
-  - vchrisb_mysql-3
+  - vchrisb_mysql
