@@ -2,8 +2,8 @@
 __pycache__/
 *.py[cod]
 
-#environment file for django
-.env
-
 #django migrations
 migrations/
+
+#cloud foundry manifest
+manifest.yml
