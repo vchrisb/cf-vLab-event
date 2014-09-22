@@ -83,4 +83,4 @@ Sample output:
 
     
 now you should be able to access the app by ``http://vlab.cfapps.io/vLab``
-and the admin interface by ``http://vlabch.cfapps.io/admin``
+and the admin interface by ``http://vlab.cfapps.io/admin``
