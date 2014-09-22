@@ -1,0 +1,518 @@
+[
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "Deploying HADOOP with EMC Isilon"
+  },
+  "pk": 3
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "Avamar 7.1"
+  },
+  "pk": 4
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "EMC Hybrid Cloud Solution"
+  },
+  "pk": 5
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "ScaleIO"
+  },
+  "pk": 6
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "VMAX Family"
+  },
+  "pk": 7
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "VPLEX"
+  },
+  "pk": 8
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "Isilon InsightIQ 3.0"
+  },
+  "pk": 9
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "Isilon OneFS 7.1"
+  },
+  "pk": 10
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "NetWorker 8.1"
+  },
+  "pk": 11
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "Syncplicity"
+  },
+  "pk": 12
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "ViPR SRM v3.5"
+  },
+  "pk": 13
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "VNX2"
+  },
+  "pk": 14
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "VNXe3200"
+  },
+  "pk": 15
+},
+{
+  "model": "vLab.lab_type",
+  "fields": {
+    "lab_name": "ViPR 2.0"
+  },
+  "pk": 16
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_EMC Avamar 7.1 VM Recovery & Inst",
+    "lab_type": 4,
+    "lab_updated": "2014-09-16T07:06:06.606Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQyLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTc5fQ=="
+  },
+  "pk": 5
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_EMC Avamar 7.1 VM Recovery & Inst",
+    "lab_type": 4,
+    "lab_updated": "2014-09-16T07:06:21.057Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTUxLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTg4fQ=="
+  },
+  "pk": 6
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "2_EMC Avamar 7.1 VM Recovery & Inst",
+    "lab_type": 4,
+    "lab_updated": "2014-09-15T23:50:29.360Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTY0LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjAwfQ=="
+  },
+  "pk": 7
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "3_EMC Avamar 7.1 VM Recovery & Inst",
+    "lab_type": 4,
+    "lab_updated": "2014-09-15T23:50:01.748Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTc1LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjEyfQ=="
+  },
+  "pk": 8
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": " 0_Deploying HADOOP with EMC Isilon",
+    "lab_type": 3,
+    "lab_updated": "2014-09-16T07:05:21.440Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQ0LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTgxfQ=="
+  },
+  "pk": 9
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Deploying HADOOP with EMC Isilon",
+    "lab_type": 3,
+    "lab_updated": "2014-09-16T07:05:55.346Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTU0LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTkxfQ=="
+  },
+  "pk": 10
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:06:53.358Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTMxLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTY4fQ=="
+  },
+  "pk": 11
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:07:07.874Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM0LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTcwfQ=="
+  },
+  "pk": 12
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "2_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:07:19.338Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM4LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTc1fQ=="
+  },
+  "pk": 13
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "3_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:07:32.794Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQ1LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTgyfQ=="
+  },
+  "pk": 14
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "4_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:07:43.764Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTU3LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTkzfQ=="
+  },
+  "pk": 15
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "5_HOL EMC Hybrid Cloud Solution",
+    "lab_type": 5,
+    "lab_updated": "2014-09-16T07:07:59.180Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTY4LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjA0fQ=="
+  },
+  "pk": 16
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_Introduction to EMC ScaleIO",
+    "lab_type": 6,
+    "lab_updated": "2014-09-16T09:20:00.427Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQ3LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTg0fQ=="
+  },
+  "pk": 17
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Introduction to EMC ScaleIO",
+    "lab_type": 6,
+    "lab_updated": "2014-09-16T07:22:47.932Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTYwLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTk2fQ=="
+  },
+  "pk": 18
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "2_Introduction to EMC ScaleIO",
+    "lab_type": 6,
+    "lab_updated": "2014-09-16T07:23:04.323Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTcxLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjA4fQ=="
+  },
+  "pk": 19
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "0_Introduction to the VMAX Family",
+    "lab_type": 7,
+    "lab_updated": "2014-09-16T13:18:18.001Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTMyLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTY5fQ=="
+  },
+  "pk": 20
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Introduction to the VMAX Family",
+    "lab_type": 7,
+    "lab_updated": "2014-09-16T07:23:34.746Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM2LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTcyfQ=="
+  },
+  "pk": 21
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_Introduction to VPLEX and VPLEX",
+    "lab_type": 8,
+    "lab_updated": "2014-09-16T07:23:51.555Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQ5LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTg2fQ=="
+  },
+  "pk": 22
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Introduction to VPLEX and VPLEX",
+    "lab_type": 8,
+    "lab_updated": "2014-09-16T07:24:09.980Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTYzLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTk5fQ=="
+  },
+  "pk": 23
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_Isilon InsightIQ 3.0",
+    "lab_type": 9,
+    "lab_updated": "2014-09-16T07:24:28.742Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTYxLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTk3fQ=="
+  },
+  "pk": 24
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Isilon InsightIQ 3.0",
+    "lab_type": 9,
+    "lab_updated": "2014-09-16T07:24:46.449Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTcyLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjA5fQ=="
+  },
+  "pk": 25
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "0_Isilon OneFS 7.1 Management",
+    "lab_type": 10,
+    "lab_updated": "2014-09-16T13:24:14.149Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM1LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTcxfQ=="
+  },
+  "pk": 26
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Isilon OneFS 7.1 Management",
+    "lab_type": 10,
+    "lab_updated": "2014-09-16T07:25:32.472Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQwLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTc3fQ=="
+  },
+  "pk": 27
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_NetWorker 8.1",
+    "lab_type": 11,
+    "lab_updated": "2014-09-16T07:26:05.607Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjozLCJzZXNzaW9uSWQiOjI2MjM2LCJvd25lcklkIjoxNzMwMiwiZGVwbG95bWVudElkIjozNDM4N30="
+  },
+  "pk": 28
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_NetWorker 8.1",
+    "lab_type": 11,
+    "lab_updated": "2014-09-16T07:26:30.645Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjozLCJzZXNzaW9uSWQiOjI2MjM3LCJvd25lcklkIjoxNzMwMiwiZGVwbG95bWVudElkIjozNDM4OH0="
+  },
+  "pk": 29
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_Syncplicity",
+    "lab_type": 12,
+    "lab_updated": "2014-09-16T09:23:54.946Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTUzLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTkwfQ=="
+  },
+  "pk": 30
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_Syncplicity",
+    "lab_type": 12,
+    "lab_updated": "2014-09-16T07:27:11.890Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTY2LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjAyfQ=="
+  },
+  "pk": 31
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "0_ViPR SRM v3.5",
+    "lab_type": 13,
+    "lab_updated": "2014-09-16T07:27:39.579Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTU2LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTkyfQ=="
+  },
+  "pk": 32
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_ViPR SRM v3.5",
+    "lab_type": 13,
+    "lab_updated": "2014-09-16T07:27:52.545Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTY3LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NjAzfQ=="
+  },
+  "pk": 33
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "0_VNX2",
+    "lab_type": 14,
+    "lab_updated": "2014-09-16T10:42:44.552Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM5LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTc2fQ=="
+  },
+  "pk": 34
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_VNX2",
+    "lab_type": 14,
+    "lab_updated": "2014-09-16T07:28:34.224Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQ2LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTgzfQ=="
+  },
+  "pk": 35
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "0_VNXe3200",
+    "lab_type": 15,
+    "lab_updated": "2014-09-16T10:37:57.134Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTM3LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTczfQ=="
+  },
+  "pk": 36
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "1_VNXe3200",
+    "lab_type": 15,
+    "lab_updated": "2014-09-16T07:29:01.098Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTQzLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTgwfQ=="
+  },
+  "pk": 37
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "0_ViPR 2.0 Storage-as-a-Service",
+    "lab_type": 16,
+    "lab_updated": "2014-09-16T10:15:22.167Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyNjE5LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0OTY3fQ=="
+  },
+  "pk": 38
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "1_ViPR 2.0 Storage-as-a-Service",
+    "lab_type": 16,
+    "lab_updated": "2014-09-16T12:54:44.459Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyNjIwLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0OTk4fQ=="
+  },
+  "pk": 39
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": false,
+    "lab_name": "2_ViPR 2.0 Storage-as-a-Service",
+    "lab_type": 16,
+    "lab_updated": "2014-09-16T13:07:48.147Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyNjIxLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE1MDE5fQ=="
+  },
+  "pk": 40
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "2_VNXe3200",
+    "lab_type": 15,
+    "lab_updated": "2014-09-16T10:40:56.791Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTUyLCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTg5fQ=="
+  },
+  "pk": 41
+},
+{
+  "model": "vLab.lab",
+  "fields": {
+    "lab_free": true,
+    "lab_name": "2_VNX2",
+    "lab_type": 14,
+    "lab_updated": "2014-09-16T10:54:18.642Z",
+    "lab_link": "https://portal.demoemc.com/trdp/vlabnextWS.html?eyJjbG91ZElkIjo1LCJzZXNzaW9uSWQiOjEyMTU4LCJvd25lcklkIjo0NTU3LCJkZXBsb3ltZW50SWQiOjE0NTk0fQ=="
+  },
+  "pk": 42
+}
+]

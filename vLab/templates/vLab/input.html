@@ -1,0 +1,10 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'vLab/style.css' %}" />
+<form action="/vLab/" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit" />
+</form>
