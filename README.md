@@ -14,10 +14,6 @@ First clone the repository:
 
     $ git clone git://github.com/vchrisb/cf-vLab-event
 
-Change django ``SECRET_KEY`` in ``emcforum/settings.py``:
-
-    SECRET_KEY = '&9cj-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
-
 Configure your app and service name in ``manifest.yml``:
 
     ---
@@ -28,6 +24,9 @@ Configure your app and service name in ``manifest.yml``:
       command: null
       services:
       - vLab_mysql
+      env:
+        SECRET_KEY: aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&
+        DEBUG: False
 
 Modify ``init_db.sh`` which will be run to initialize the DB:
 
