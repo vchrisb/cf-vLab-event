@@ -46,7 +46,7 @@ Modify ``init_db.sh`` which will be run to initialize the DB:
 Deploy to Cloud Foundry:
 -------------
 
-Login to Pivtoal Web Services and create MySQL service:
+Login to Pivtoal Web Services and create ElephantSQL service:
 
     cf login -a https://api.run.pivotal.io
     cf marketplace
