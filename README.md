@@ -25,7 +25,7 @@ Configure your app and service name in ``manifest.yml``:
       memory: 128M
       command: null
       services:
-      - vLab_mysql
+      - vLab_DB
       env:
         SECRET_KEY: 'aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
         DEBUG: 'False'
@@ -50,7 +50,7 @@ Login to Pivtoal Web Services and create MySQL service:
 
     cf login -a https://api.run.pivotal.io
     cf marketplace
-    cf create-service cleardb spark vLab_mysql
+    cf create-service elephantsql turtle vLab_DB
 
 Push app and run database initialization script:
 
