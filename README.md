@@ -5,7 +5,7 @@ A Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. 
 Requirements:
 -------------
 * a Cloud Foundry account (a 60-day free trial can be found here: https://run.pivotal.io/)
-* a Cloud Foundry Mysql Service
+* a Cloud Foundry SQL Service (ClearDB Mysql or ElephantSQL PostgreSQL)
 * Cloud Foundry cli (https://github.com/cloudfoundry/cli/releases)
 * git cli (http://git-scm.com/downloads)
 
