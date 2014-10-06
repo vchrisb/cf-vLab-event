@@ -65,24 +65,21 @@ WSGI_APPLICATION = 'emcforum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 import json
-mysql_srv = None
+import dj_database_url
+sql_cred = None
 if 'VCAP_SERVICES' in os.environ:
     import json
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
     if 'cleardb' in vcap_services:
-        mysql_srv = vcap_services['cleardb'][0]
+        sql_uri = vcap_services['cleardb'][0]['credentials']['uri']
+        sql_cred = dj_database_url.parse(sql_uri,'mysql.connector.django')
+    elif 'elephantsql' in vcap_services:
+        sql_uri = vcap_services['elephantsql'][0]['credentials']['uri']
+        sql_cred = dj_database_url.parse(sql_uri)
 
-if bool(mysql_srv):
-    cred = mysql_srv['credentials']
+if bool(sql_cred):
     DATABASES = {
-        'default': {
-            'ENGINE': 'mysql.connector.django',
-            'NAME': cred['name'],
-            'USER': cred['username'],
-            'PASSWORD': cred['password'],
-            'HOST': cred['hostname'],
-            'PORT': cred['port'],
-            }
+        'default': sql_cred
         }
 else:
     DATABASES = {
