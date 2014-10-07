@@ -41,6 +41,8 @@ Modify ``init_db.sh`` which will be run once to initialize the DB:
     
     echo "------ create default admin user ------"
     echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@vlab.local', 'Passw0rd')" | python manage.py shell
+
+    echo "------ starting gunicorn  ------"
     gunicorn emcforum.wsgi --workers 2
 
 Deploy to Cloud Foundry:
