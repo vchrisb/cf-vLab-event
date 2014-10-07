@@ -16,7 +16,7 @@ First clone the repository:
 
     $ git clone git://github.com/vchrisb/cf-vLab-event
 
-Configure your app and service name in ``manifest.yml``:
+Configure your app and service name and modify the ``SECRET_KEY`` in ``manifest.yml``:
 
     ---
     applications:
@@ -30,7 +30,7 @@ Configure your app and service name in ``manifest.yml``:
         SECRET_KEY: 'aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
         DEBUG: 'False'
 
-Modify ``init_db.sh`` which will be run to initialize the DB:
+Modify ``init_db.sh`` which will be run once to initialize the DB:
 
     #!/bin/sh
     echo "------ Create database tables ------"
