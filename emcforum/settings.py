@@ -64,30 +64,9 @@ WSGI_APPLICATION = 'emcforum.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
-import json
-import dj_database_url
-sql_cred = None
-if 'VCAP_SERVICES' in os.environ:
-    import json
-    vcap_services = json.loads(os.environ['VCAP_SERVICES'])
-    if 'cleardb' in vcap_services:
-        sql_uri = vcap_services['cleardb'][0]['credentials']['uri']
-        sql_cred = dj_database_url.parse(sql_uri,'mysql.connector.django')
-    elif 'elephantsql' in vcap_services:
-        sql_uri = vcap_services['elephantsql'][0]['credentials']['uri']
-        sql_cred = dj_database_url.parse(sql_uri)
 
-if bool(sql_cred):
-    DATABASES = {
-        'default': sql_cred
-        }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'mydatabase',
-            }
-        }
+import dj_database_url
+DATABASES = {'default': dj_database_url.config()}
 
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
