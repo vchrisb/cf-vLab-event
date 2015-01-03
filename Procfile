@@ -1,1 +1,1 @@
-web: gunicorn emcforum.wsgi --workers 2
+web: newrelic-admin run-program gunicorn emcforum.wsgi --workers 2
