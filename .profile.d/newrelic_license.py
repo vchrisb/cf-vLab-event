@@ -6,6 +6,5 @@ if 'VCAP_SERVICES' in os.environ:
 
     if 'newrelic' in vcap_services:
         NEW_RELIC_LICENSE_KEY = vcap_services['newrelic'][0]['credentials']['licenseKey']
-        NEW_RELIC_APP_NAME = vcap_services['newrelic'][0]['name']
 
 print(NEW_RELIC_LICENSE_KEY)
