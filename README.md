@@ -3,8 +3,8 @@ cf-vLab-event
 An example Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. Tested with Pivotal Web Services https://run.pivotal.io/ 
 
 Read more:
-http://blog.banck.net/2014/12/deploying-a-django-application-to-cloud-foundry/
-http://blog.banck.net/2015/01/new-relic-python-cloud-foundry/
+* http://blog.banck.net/2014/12/deploying-a-django-application-to-cloud-foundry/
+* http://blog.banck.net/2015/01/new-relic-python-cloud-foundry/
 
 Requirements:
 -------------
