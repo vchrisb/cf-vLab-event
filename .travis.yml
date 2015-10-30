@@ -2,7 +2,6 @@ language: python
 python:
   - "3.4"
   - "3.5"
-  - "3.5-dev" # 3.5 development branch
   - "nightly" # currently points to 3.6-dev
 
 services:
@@ -16,7 +15,7 @@ env:
   matrix:
     - DJANGO=1.7.10
     - DJANGO=1.8.5
-    - DJANGO=latest
+    - DJANGO=1.9b1
 # command to install dependencies
 install:
   - pip install -q Django==$DJANGO
