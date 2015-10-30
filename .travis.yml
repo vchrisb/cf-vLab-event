@@ -16,6 +16,7 @@ env:
     - DJANGO=1.7.10
     - DJANGO=1.8.5
     - DJANGO=1.9b1
+    - DJANGO=latest
 
 matrix:
   exclude:
@@ -28,11 +29,12 @@ matrix:
 
 # command to install dependencies
 install:
-  - pip install -q Django==$DJANGO
+  - if [[ "$DJANGO" != "latest" ]] ; then pip install -q Django==$DJANGO
   - pip install -r requirements.txt
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
 # command to run tests
 script:
+  - python manage.py version
   - python manage.py test --noinput
   - python manage.py migrate --noinput
