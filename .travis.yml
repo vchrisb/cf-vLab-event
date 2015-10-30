@@ -8,8 +8,8 @@ python:
 services:
   - postgresql
 
-enc:
-  - DATABASE_URL='postgres://postgres:postgres@localhost:5432/travis_ci_test'
+env:
+  - DATABASE_URL='postgres://postgres:@localhost:/travis_ci_test'
 # command to install dependencies
 install:
   - pip install -r requirements.txt
