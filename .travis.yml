@@ -1,8 +1,5 @@
 language: python
 
-services:
-  - postgresql
-
 env:
   global:
     - DATABASE_URL='postgres://postgres:@localhost:/travis_ci_test'
