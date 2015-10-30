@@ -9,9 +9,17 @@ services:
   - postgresql
 
 env:
-  - DATABASE_URL='postgres://postgres:@localhost:/travis_ci_test'
+  global:
+    - DATABASE_URL='postgres://postgres:@localhost:/travis_ci_test'
+    - SECRET_KEY='aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
+    - DEBUG='False'
+  matrix:
+    - DJANGO=1.7.10
+    - DJANGO=1.8.5
+    - DJANGO=latest
 # command to install dependencies
 install:
+  - pip install -q Django==$DJANGO
   - pip install -r requirements.txt
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
