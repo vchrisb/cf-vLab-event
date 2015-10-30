@@ -18,8 +18,7 @@ env:
     - DJANGO=1.9b1
 
 matrix:
-  allow_failures:
-	exclude:
+	include:
     - python: "3.5"
       env: DJANGO=1.7.10
     - python: "nightly"
