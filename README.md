@@ -1,6 +1,6 @@
-cf-vLab-event
+cf-vLab-event [![Build Status](https://travis-ci.org/vchrisb/cf-vLab-event.svg?branch=travis)](https://travis-ci.org/vchrisb/cf-vLab-event)
 ==========
-An example Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. Tested with Pivotal Web Services https://run.pivotal.io/ 
+An example Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. Tested with Pivotal Web Services https://run.pivotal.io/
 
 Read more:
 * https://banck.net/2014/12/deploying-a-django-application-to-cloud-foundry/
@@ -39,10 +39,10 @@ Modify ``init_db.sh`` which will be run once to initialize the DB:
     #!/bin/sh
     echo "------ Create database tables ------"
     python manage.py migrate --noinput
-    
+
     echo "------ import sample data ------"
     python manage.py loaddata vLab.json
-    
+
     echo "------ create default admin user ------"
     echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@vlab.local', 'Passw0rd')" | python manage.py shell
 
@@ -61,7 +61,7 @@ Login to Pivtoal Web Services and create ElephantSQL service:
 Push app and run database initialization script:
 
     cf push --no-route -c "bash ./init_db.sh"
-    
+
 Push app:
 
     cf push
@@ -72,21 +72,21 @@ Test App:
 Get ``status`` and ``URL``:
 
     cf app vLab
-    
+
 Sample output:
 
     Showing health and status for app vLab in org ORG / space SPACE as user@example.com...
     OK
-    
+
     requested state: started
     instances: 1/1
     usage: 128M x 1 instances
     urls: vlab.cfapps.io
-    
+
          state     since                    cpu    memory          disk
     #0   running   2014-09-22 11:40:13 AM   0.0%   90.8M of 128M   168.8M of 1G
 
 
-    
+
 now you should be able to access the app by ``http://vlab.cfapps.io``
 and the admin interface by ``http://vlab.cfapps.io/admin``
