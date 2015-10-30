@@ -1,7 +1,6 @@
 Django
 WhiteNoise
 gunicorn
-mysql-connector-python
 psycopg2
 dj-database-url
 newrelic
