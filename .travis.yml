@@ -40,5 +40,3 @@ script:
   - python manage.py version
   - python manage.py test --noinput
   - python manage.py migrate --noinput
-  - python manage.py loaddata vLab.json
-  - echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@vlab.local', 'Passw0rd')" | python manage.py shell
