@@ -1,4 +1,4 @@
-cf-vLab-event [![Build Status](https://travis-ci.org/vchrisb/cf-vLab-event.svg?branch=travis)](https://travis-ci.org/vchrisb/cf-vLab-event)
+cf-vLab-event [![Build Status](https://travis-ci.org/vchrisb/cf-vLab-event.svg?branch=master)](https://travis-ci.org/vchrisb/cf-vLab-event)
 ==========
 An example Cloud Foundry django app for handling EMC's vLab autologinlinks for an event. Tested with Pivotal Web Services https://run.pivotal.io/
 
