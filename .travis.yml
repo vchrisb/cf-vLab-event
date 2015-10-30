@@ -19,6 +19,8 @@ env:
     - DJANGO=latest
 
 matrix:
+  allow_failures:
+    - python: "nightly"
   exclude:
     - python: "3.5"
       env: DJANGO=1.7.10
