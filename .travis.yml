@@ -15,7 +15,17 @@ env:
   matrix:
     - DJANGO=1.7.10
     - DJANGO=1.8.5
+    - DJANGO=
     - DJANGO=1.9b1
+
+matrix:
+	exclude:
+    - python: "3.5"
+      env: DJANGO=1.7.10
+    - python: "nightly"
+      env: DJANGO=1.7.10
+    - python: "nightly"
+      env: DJANGO=1.8.5
 # command to install dependencies
 install:
   - pip install -q Django==$DJANGO
