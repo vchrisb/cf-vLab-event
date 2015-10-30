@@ -4,3 +4,4 @@ gunicorn
 psycopg2
 dj-database-url
 newrelic
+mysql-connector-python
