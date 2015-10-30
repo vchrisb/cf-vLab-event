@@ -4,9 +4,14 @@ python:
   - "3.5"
   - "3.5-dev" # 3.5 development branch
   - "nightly" # currently points to 3.6-dev
+
+services:
+  - postgresql
+
 # command to install dependencies
 install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python setup.py test
+  - python manage.py test --noinput
+  - python manage.py migrate --noinput
